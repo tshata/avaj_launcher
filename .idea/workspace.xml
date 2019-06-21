@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c527cfd-02f4-4a8d-9189-fedccdd9619e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/scenario.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/za/co/wethinkcode/weather/Simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/za/co/wethinkcode/weather/Simulator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/za/co/wethinkcode/weather/WeatherProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/za/co/wethinkcode/weather/WeatherProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/za/co/wethinkcode/weather/WeatherTower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/za/co/wethinkcode/weather/WeatherTower.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,21 +25,25 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="12" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="12" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="933" />
+          <entry key="java" value="1101" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="933" />
+          <entry key="JAVA" value="1101" />
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -73,19 +78,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/za/co/wethinkcode/aircraft/Helicopter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="33" selection-start-column="33" selection-end-column="33" />
-              <folding>
-                <element signature="e#229#230#0" expanded="true" />
-                <element signature="e#250#251#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/za/co/wethinkcode/aircraft/JetPlane.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -98,15 +90,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/za/co/wethinkcode/weather/Simulator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
               <folding>
-                <element signature="e#103#104#0" expanded="true" />
-                <element signature="e#139#140#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scenario.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -137,11 +137,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/za/co/wethinkcode/weather/WeatherProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+            <state relative-caret-position="225">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -150,7 +150,7 @@
         <entry file="file://$PROJECT_DIR$/src/za/co/wethinkcode/aircraft/Coordinates.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -170,9 +170,10 @@
         <option value="$PROJECT_DIR$/src/za/co/wethinkcode/weather/Tower.java" />
         <option value="$PROJECT_DIR$/src/za/co/wethinkcode/aircraft/Aircraft.java" />
         <option value="$PROJECT_DIR$/src/za/co/wethinkcode/aircraft/AircraftFactory.java" />
-        <option value="$PROJECT_DIR$/src/za/co/wethinkcode/weather/Simulator.java" />
         <option value="$PROJECT_DIR$/src/za/co/wethinkcode/weather/WeatherTower.java" />
         <option value="$PROJECT_DIR$/src/za/co/wethinkcode/weather/WeatherProvider.java" />
+        <option value="$PROJECT_DIR$/scenario.txt" />
+        <option value="$PROJECT_DIR$/src/za/co/wethinkcode/weather/Simulator.java" />
       </list>
     </option>
   </component>
@@ -235,7 +236,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561122546357" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561124285788" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -253,6 +254,7 @@
     <configuration name="Simulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="za.co.wethinkcode.weather.Simulator" />
       <module name="avaj-launcher" />
+      <option name="PROGRAM_PARAMETERS" value="scenario.txt" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="za.co.wethinkcode.weather.*" />
@@ -285,12 +287,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561120089636</updated>
-      <workItem from="1561120095899" duration="2401000" />
+      <workItem from="1561120095899" duration="3284000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2401000" />
+    <option name="totallyTimeSpent" value="3284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="836" height="1080" extended-state="0" />
@@ -301,15 +303,16 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24937028" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24937028" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" weight="0.32970297" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32970297" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -375,7 +378,7 @@
     <entry file="file://$PROJECT_DIR$/src/za/co/wethinkcode/aircraft/Coordinates.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
@@ -404,14 +407,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/za/co/wethinkcode/weather/Simulator.java">
+    <entry file="file://$PROJECT_DIR$/src/za/co/wethinkcode/weather/WeatherProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-          <folding>
-            <element signature="e#103#104#0" expanded="true" />
-            <element signature="e#139#140#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -426,10 +425,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/za/co/wethinkcode/weather/WeatherProvider.java">
+    <entry file="file://$PROJECT_DIR$/scenario.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        <state relative-caret-position="135">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/za/co/wethinkcode/weather/Simulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

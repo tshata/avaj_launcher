@@ -3,7 +3,7 @@ package za.co.wethinkcode.weather;
 import za.co.wethinkcode.aircraft.Coordinates;
 
 public class WeatherProvider {
-    private WeatherProvider weatherProvider;
+    private static WeatherProvider weatherProvider;
     private String weather[];
 
     WeatherProvider(){

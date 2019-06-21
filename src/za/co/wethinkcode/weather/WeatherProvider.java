@@ -9,12 +9,13 @@ public class WeatherProvider {
     WeatherProvider(){
         //do some stuff
     }
-
+/*
     WeatherProvider getProvider(){
         //do some stuff
+        return ;
     }
 
     String getCurrentWeather(Coordinates coordinates){
         //do some stuff
-    }
+    }*/
 }

@@ -5,8 +5,8 @@ public abstract class AircraftFactory {
         Coordinates coordinates = new Coordinates(longitude, latitude, height);
 
         String str = type.toLowerCase();
-        if (str.equals("baloon")) {
-            return new Baloon(name, coordinates);
+        if (str.equals("balloon")) {
+            return new Balloon(name, coordinates);
         }
         else if (str.equals("jetplane")) {
             return new JetPlane(name, coordinates);

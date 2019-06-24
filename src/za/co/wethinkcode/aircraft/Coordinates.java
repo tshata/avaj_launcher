@@ -11,14 +11,23 @@ public class Coordinates {
         this.height = height;
     }
     public int getHeight() {
+        if(height < 0)
+            System.exit(1);
+        else if(height > 100)
+            System.exit(1);
         return height;
     }
 
     public int getLongitude() {
-        return longitude;
+        if(longitude < 0)
+            System.exit(1);
+        else
+            return longitude;
     }
 
     public int getLatitude() {
+        if(latitude < 0)
+            System.exit(1);
         return latitude;
     }
 }

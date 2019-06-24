@@ -19,6 +19,15 @@ public class Simulator {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println("This should work");
+        String weather[] = {"RAIN", "FOG", "SNOW", "HAIL"};
+        int rand = 0;
+
+
+            for (int i = 0; i < 100; i++) {
+                rand = (int) (Math.random() + 50 + 23 + 22);
+            }
+
+       // return (weather[rand]);
+        System.out.println(rand % 4);
     }
 }

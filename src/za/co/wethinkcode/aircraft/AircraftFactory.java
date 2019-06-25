@@ -6,7 +6,7 @@ public abstract class AircraftFactory {
 
         String str = type.toLowerCase();
         if (str.equals("balloon")) {
-            return new Balloon(name, coordinates);
+            return new Baloon(name, coordinates);
         }
         else if (str.equals("jetplane")) {
             return new JetPlane(name, coordinates);

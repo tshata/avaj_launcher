@@ -6,6 +6,8 @@ import java.io.IOException;
 
 
 public class Simulator {
+    //initialize weather tower and array list of flyables
+
     public static void main(String[] args){
         String scenarioFile = args[0];
 
@@ -15,19 +17,27 @@ public class Simulator {
             while ((line = br.readLine()) != null) {
                 System.out.println(line);
             }
+            //make sure lines are not empty
+            //save first number for simulation number
+            //check its positive
+            //read other lines
+            //make flyables from aircraft factory and use info from line as input
+            //if successful flyable.add(flyable)
 
+            //register flyables on towers
+
+            //change the weather for all simulations runs
+//            int i = 0;
+//            while(i < simulations){
+//                weatherTower.changeWeather();
+//            }
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            //close the logger
         }
-        String weather[] = {"RAIN", "FOG", "SNOW", "HAIL"};
-        int rand = 0;
 
-
-            for (int i = 0; i < 100; i++) {
-                rand = (int) (Math.random() + 50 + 23 + 22);
-            }
-
-       // return (weather[rand]);
-        System.out.println(rand % 4);
+        //return (weather[rand]);
+        System.out.println("getting there");
     }
 }

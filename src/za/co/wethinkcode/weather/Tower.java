@@ -21,10 +21,12 @@ public abstract class Tower {
         //do some stuff
         int i = 0;
 
+        //check height at 0 for those landed
         while(i < observers.size())
         {
             observers.get(i).updateConditions();
             i++;
         }
+        //remove landed
     }
 }

@@ -4,7 +4,7 @@ import za.co.wethinkcode.aircraft.Coordinates;
 
 public class WeatherProvider {
     private static WeatherProvider weatherProvider;
-    private String weather[] = {"RAIN", "FOG", "SNOW", "HAIL"};
+    private String weather[] = {"RAIN", "FOG", "SNOW", "SUN"};
 
     WeatherProvider(){
         //do some stuff
@@ -12,7 +12,10 @@ public class WeatherProvider {
 
     WeatherProvider getProvider(){
         //do some stuff
-        return WeatherProvider.weatherProvider;
+        if (this.weatherProvider == null) {
+            this.weatherProvider = new WeatherProvider();
+        }
+        return this.weatherProvider;
     }
 
     String getCurrentWeather(Coordinates coordinates){

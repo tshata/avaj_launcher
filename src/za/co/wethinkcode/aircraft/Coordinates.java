@@ -23,6 +23,7 @@ public class Coordinates {
             System.exit(1);
         else
             return longitude;
+        return 0;
     }
 
     public int getLatitude() {

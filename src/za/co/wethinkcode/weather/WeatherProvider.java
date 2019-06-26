@@ -10,12 +10,12 @@ public class WeatherProvider {
         //do some stuff
     }
 
-    WeatherProvider getProvider(){
+    static WeatherProvider getProvider(){
         //do some stuff
-        if (this.weatherProvider == null) {
-            this.weatherProvider = new WeatherProvider();
+        if (weatherProvider == null) {
+            weatherProvider = new WeatherProvider();
         }
-        return this.weatherProvider;
+        return weatherProvider;
     }
 
     String getCurrentWeather(Coordinates coordinates){

@@ -1,17 +1,13 @@
 package za.co.wethinkcode.weather;
-import za.co.wethinkcode.aircraft.Aircraft;
 import za.co.wethinkcode.aircraft.AircraftFactory;
 import za.co.wethinkcode.aircraft.Flyable;
-
-import java.io.BufferedReader;
 import java.io.*;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+
 
 
 public class Simulator {
-    private static WeatherTower weatherTower;
+   private static WeatherTower weatherTower;
     public static FileWriter logger;
     private static List<Flyable> flyables = new ArrayList<Flyable>();
     //initialize weather tower and array list of flyables
@@ -19,7 +15,7 @@ public class Simulator {
     public static void main(String[] args){
        // AircraftFactory aircraftFactory = new AircraftFactory;
         String scenarioFile = args[0];
-
+      //  WeatherTower weatherTower;
         try (BufferedReader br = new BufferedReader(new FileReader(scenarioFile))) {
 
             String line;
@@ -53,15 +49,20 @@ public class Simulator {
                         {
                             flyables.add(flyable);
                         }
-
+//                        System.out.println(line);
                         //loop through arraylist of flyables
 //                        while(flyables != null) {
 //                            flyable.registerTower(weatherTower);
 //                        }
 
-                        for (flyable : flyables) {
-                            flyable.registerTower(weatherTower);
+                        for (Flyable f : flyables)
+                        {
+                            if(f == null)
+                                break;
+                            System.out.println(f);
+                            f.registerTower(weatherTower);
                         }
+
 
                         int j = 0;
                         while(j < simu)

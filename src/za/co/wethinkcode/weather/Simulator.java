@@ -1,27 +1,80 @@
 package za.co.wethinkcode.weather;
+import za.co.wethinkcode.aircraft.Aircraft;
 import za.co.wethinkcode.aircraft.AircraftFactory;
 import za.co.wethinkcode.aircraft.Flyable;
 
 import java.io.BufferedReader;
 import java.io.*;
 import java.io.IOException;
-
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Simulator {
+    private static WeatherTower weatherTower;
     public static FileWriter logger;
+    private static List<Flyable> flyables = new ArrayList<Flyable>();
     //initialize weather tower and array list of flyables
 
     public static void main(String[] args){
+       // AircraftFactory aircraftFactory = new AircraftFactory;
         String scenarioFile = args[0];
 
         try (BufferedReader br = new BufferedReader(new FileReader(scenarioFile))) {
 
             String line;
-            if(line == br.readLine())
-            while ((line = br.readLine()) != null) {
-                String parts[] = line.split(" ");
+
+            if((line = br.readLine()) != null)
+            {
+                int simu = Integer.parseInt(line);
+                System.out.println(simu);
+                if(simu > 0)
+                {
+                    while ((line = br.readLine()) != null) {
+                        String[] parts = line.split(" ");
+
+                        String part1 = parts[0];
+                        String part2 = parts[1];
+                        String part3 = parts[2];
+                        String part4 = parts[3];
+                        String part5 = parts[4];
+
+                        int longit = Integer.parseInt(part3);
+                        int latitu = Integer.parseInt(part4);
+                        int height = Integer.parseInt(part5);
+
+                        System.out.print(part1 + " ");
+                        System.out.print(part2 + " ");
+                        System.out.print(part3 + " ");
+                        System.out.print(part4 + " ");
+                        System.out.print(part5 + "\n");
+                        Flyable flyable = AircraftFactory.newAircraft(part1, part2, longit, latitu, height);
+                        if(flyable != null)
+                        {
+                            flyables.add(flyable);
+                        }
+
+                        //loop through arraylist of flyables
+//                        while(flyables != null) {
+//                            flyable.registerTower(weatherTower);
+//                        }
+
+                        for (flyable : flyables) {
+                            flyable.registerTower(weatherTower);
+                        }
+
+                        int j = 0;
+                        while(j < simu)
+                        {
+                            weatherTower.changeWeather();
+                            j++;
+                        }
+                    }
+                }
+
+
             }
+
 
             //make sure lines are not empty
             //save first number for simulation number

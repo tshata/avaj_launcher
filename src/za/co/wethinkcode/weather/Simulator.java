@@ -1,6 +1,6 @@
 package za.co.wethinkcode.weather;
 import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.*;
 import java.io.IOException;
 
 
@@ -36,7 +36,14 @@ public class Simulator {
         } finally {
             //close the logger
         }
-
+        try {
+            FileWriter fw = new FileWriter("simulator.txt");
+            fw.write("Lets see if this works");
+            fw.close();
+        }catch(Exception e){
+            System.out.println(e);
+        }
+        System.out.println("Success...");
         //return (weather[rand]);
         System.out.println("getting there");
     }

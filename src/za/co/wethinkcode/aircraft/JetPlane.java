@@ -3,7 +3,7 @@ package za.co.wethinkcode.aircraft;
 import za.co.wethinkcode.weather.WeatherTower;
 
 public class JetPlane extends Aircraft implements Flyable{
-    private WeatherTower weatherTower;
+    private WeatherTower weatherTower = new WeatherTower();
 
     JetPlane(String name, Coordinates coordinates){
         super(name, coordinates);
@@ -34,6 +34,17 @@ public class JetPlane extends Aircraft implements Flyable{
         //do some stuff
         this.weatherTower = weatherTower;
         //write to file
+        try {
+            if(this.coordinates.getHeight() == 0)
+            {
+                weatherTower.unregister(this);
+                System.out.println("Jetplane#" + this.name + "(" + this.id + ")" + " has landed.");
+            }
+            System.out.println("Tower says: Jetplane#" + this.name + "(" + this.id + ")" + " registered to weather tower.");
+            //Simulator.logger.close();
+        }catch(Exception e){
+            System.out.println(e);
+        }
 
         weatherTower.register(this);
     }

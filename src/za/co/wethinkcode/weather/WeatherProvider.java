@@ -26,7 +26,7 @@ public class WeatherProvider {
         int rand = 0;
 
             for (int i = 0; i < 4; i++) {
-                rand = (int) (Math.random() + height + longi + lat);
+                rand = (int) (Math.random() * height * longi + lat);
             }
 
         return (weather[rand % 4]);

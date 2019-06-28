@@ -12,15 +12,15 @@ public class Coordinates {
     }
     public int getHeight() {
         if(height < 0)
-            System.exit(1);
+            height = 0;
         else if(height > 100)
-            System.exit(1);
+            height = 100;
         return height;
     }
 
     public int getLongitude() {
         if(longitude < 0)
-            System.exit(1);
+            longitude = 0;
         else
             return longitude;
         return 0;
@@ -28,7 +28,7 @@ public class Coordinates {
 
     public int getLatitude() {
         if(latitude < 0)
-            System.exit(1);
+            latitude = 0;
         return latitude;
     }
 }

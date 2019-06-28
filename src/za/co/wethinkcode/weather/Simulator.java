@@ -7,25 +7,27 @@ import java.util.*;
 
 
 public class Simulator {
-   private static WeatherTower weatherTower;
-    public static FileWriter logger;
+   private static WeatherTower weatherTower = new WeatherTower();
+
     private static List<Flyable> flyables = new ArrayList<Flyable>();
     //initialize weather tower and array list of flyables
 
-    public static void main(String[] args){
-       // AircraftFactory aircraftFactory = new AircraftFactory;
+    public static void main(String[] args) {
+        // AircraftFactory aircraftFactory = new AircraftFactory;
+        if(args[0] == null)
+        {
+            System.out.println("You must include a scenario file as input to the program when you run it.");
+        }
         String scenarioFile = args[0];
-      //  WeatherTower weatherTower;
+        //  WeatherTower weatherTower;
         try (BufferedReader br = new BufferedReader(new FileReader(scenarioFile))) {
 
             String line;
 
-            if((line = br.readLine()) != null)
-            {
+            if ((line = br.readLine()) != null) {
                 int simu = Integer.parseInt(line);
                 System.out.println(simu);
-                if(simu > 0)
-                {
+                if (simu > 0) {
                     while ((line = br.readLine()) != null) {
                         String[] parts = line.split(" ");
 
@@ -34,44 +36,39 @@ public class Simulator {
                         String part3 = parts[2];
                         String part4 = parts[3];
                         String part5 = parts[4];
-
-                        int longit = Integer.parseInt(part3);
+                          int longit = Integer.parseInt(part3);
                         int latitu = Integer.parseInt(part4);
                         int height = Integer.parseInt(part5);
 
-                        System.out.print(part1 + " ");
-                        System.out.print(part2 + " ");
-                        System.out.print(part3 + " ");
-                        System.out.print(part4 + " ");
-                        System.out.print(part5 + "\n");
+if(latitu < 0 || longit < 0 || height < 0){
+    System.out.println("Error : All values must be positive");
+    break;
+}
+
                         Flyable flyable = AircraftFactory.newAircraft(part1, part2, longit, latitu, height);
                         if(flyable != null)
                         {
                             flyables.add(flyable);
                         }
-//                        System.out.println(line);
-                        //loop through arraylist of flyables
-//                        while(flyables != null) {
-//                            flyable.registerTower(weatherTower);
+
+                        flyable.registerTower(weatherTower);
 //                        }
 
-                        for (Flyable f : flyables)
-                        {
-                            if(f == null)
-                                break;
-                            System.out.println(f);
-                            f.registerTower(weatherTower);
-                        }
-
-
-                        int j = 0;
-                        while(j < simu)
-                        {
-                            weatherTower.changeWeather();
-                            j++;
-                        }
+////
+//                        int j = 0;
+//                       while(j < simu)
+//                       {
+//                            weatherTower.changeWeather();
+//                         j++;
+//                       }
                     }
-                }
+                   int j = 0;
+                    while (j < simu) {
+                        weatherTower.changeWeather();
+                        j++;
+                    }
+                }else
+                    System.out.println("There should be a positive number at the top of the scenario file");
 
 
             }
@@ -84,23 +81,23 @@ public class Simulator {
             //make flyables from aircraft factory and use info from line as input
 
             //if successful
-           //  flyable.add(flyable);
+            //  flyable.add(flyable);
 
             //register flyables on towers
 
             //change the weather for all simulations runs
-//            int i = 0;
-//            while(i < simulations){
+//             int i = 0;
+//            while(i < simu){
 //                weatherTower.changeWeather();
 //            }
         } catch (IOException e) {
-            e.printStackTrace();
+//            e.printStackTrace();
         } finally {
-            //close the logger
+//            //close the logger
         }
 
-        System.out.println("Success...");
-        //return (weather[rand]);
-        System.out.println("getting there");
+       //     System.out.println("Success...");
+            //return (weather[rand]);
+       //     System.out.println("getting there");
+        }
     }
-}

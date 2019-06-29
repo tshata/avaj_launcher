@@ -29,6 +29,10 @@ public class Simulator {
                 System.out.println(simu);
                 if (simu > 0) {
                     while ((line = br.readLine()) != null) {
+                        if(line.length() == 32)
+                        {
+                            System.out.println("I can't read encrypted files");
+                        }
                         String[] parts = line.split(" ");
 
                         String part1 = parts[0];

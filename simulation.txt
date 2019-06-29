@@ -1,0 +1,183 @@
+Tower says: Baloon#B1(1) registered to weather tower.
+Tower says: Baloon#B2(2) registered to weather tower.
+Tower says: Jetplane#J1(3) registered to weather tower.
+Tower says: Helicopter#H1(4) registered to weather tower.
+Tower says: Helicopter#H2(5) registered to weather tower.
+Tower says: Helicopter#H3(6) registered to weather tower.
+Tower says: Baloon#B3(7) registered to weather tower.
+Tower says: Jetplane#J2(8) registered to weather tower.
+Tower says: Helicopter#H4(9) registered to weather tower.
+Baloon#B1(1): There's something in the mist!!! 
+Baloon#B2(2): It is snowing, we need to land
+JetPlane#J1(3): Get cruising altitude.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5): Don't look at the sun
+Helicopter#H3(6): I can't see sh*t
+Baloon#B3(7): It is snowing, we need to land
+JetPLane#J2(8): Just fly above the clouds.
+Helicopter#H4(9): Don't look at the sun
+Baloon#B1(1): It is snowing, we need to land
+Baloon#B2(2):ts a sunny day
+JetPLane#J1(3): Just fly above the clouds.
+Helicopter#H1(4): It is raining, lets head east.
+Helicopter#H2(5): It is raining, lets head east.
+Helicopter#H3(6): It is raining, lets head east.
+Baloon#:B3(7) says:It is raining, we need to go lower" 
+JetPLane#J2(8): Just fly above the clouds.
+Helicopter#H4(9): I can't see sh*t
+Baloon#:B1(1) says:It is raining, we need to go lower" 
+Baloon#:B2(2) says:It is raining, we need to go lower" 
+JetPlane#J1(3): Get cruising altitude.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5):It is snowing, lets land.
+Helicopter#H3(6):It is snowing, lets land.
+Baloon#B3(7): has landed.
+Baloon#B3(7): It is snowing, we need to land
+Helicopter#H4(9): Don't look at the sun
+Baloon#B1(1):ts a sunny day
+Baloon#:B2(2) says:It is raining, we need to go lower" 
+JetPlane#J1(3):We don't care we just make sonic booms through this fog.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5): It is raining, lets head east.
+Helicopter#H3(6): Don't look at the sun
+JetPlane#J2(8):We don't care we just make sonic booms through this fog.
+Helicopter#H4(9):It is snowing, lets land.
+Baloon#B1(1): There's something in the mist!!! 
+Baloon#B2(2):ts a sunny day
+JetPlane#J1(3):Flip upside down so the sun won't blind you.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5): I can't see sh*t
+Helicopter#H3(6):It is snowing, lets land.
+JetPlane#J2(8):Flip upside down so the sun won't blind you.
+Helicopter#H4(9): I can't see sh*t
+Baloon#B1(1): has landed.
+Baloon#B1(1): It is snowing, we need to land
+JetPlane#J1(3): Get cruising altitude.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5):It is snowing, lets land.
+Helicopter#H3(6): Don't look at the sun
+JetPlane#J2(8):We don't care we just make sonic booms through this fog.
+Helicopter#H4(9): Don't look at the sun
+Baloon#:B2(2) says:It is raining, we need to go lower" 
+JetPLane#J1(3): Just fly above the clouds.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5):It is snowing, lets land.
+Helicopter#H3(6): It is raining, lets head east.
+JetPlane#J2(8): Get cruising altitude.
+Helicopter#H4(9): I can't see sh*t
+Baloon#B2(2): It is snowing, we need to land
+JetPlane#J1(3):Flip upside down so the sun won't blind you.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5): It is raining, lets head east.
+Helicopter#H3(6):It is snowing, lets land.
+JetPlane#J2(8):Flip upside down so the sun won't blind you.
+Helicopter#H4(9): I can't see sh*t
+Baloon#:B2(2) says:It is raining, we need to go lower" 
+JetPLane#J1(3): Just fly above the clouds.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5): Don't look at the sun
+Helicopter#H3(6): I can't see sh*t
+JetPLane#J2(8): Just fly above the clouds.
+Helicopter#H4(9):It is snowing, lets land.
+Baloon#:B2(2) says:It is raining, we need to go lower" 
+JetPlane#J1(3):Flip upside down so the sun won't blind you.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5):It is snowing, lets land.
+Helicopter#H3(6): Don't look at the sun
+JetPlane#J2(8): Get cruising altitude.
+Helicopter#H4(9): I can't see sh*t
+Baloon#B2(2): It is snowing, we need to land
+JetPlane#J1(3):Flip upside down so the sun won't blind you.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5): I can't see sh*t
+Helicopter#H3(6): It is raining, lets head east.
+JetPlane#J2(8):We don't care we just make sonic booms through this fog.
+Helicopter#H4(9): I can't see sh*t
+Baloon#B2(2): There's something in the mist!!! 
+JetPlane#J1(3):We don't care we just make sonic booms through this fog.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5): I can't see sh*t
+Helicopter#H3(6): It is raining, lets head east.
+JetPlane#J2(8): Get cruising altitude.
+Helicopter#H4(9): I can't see sh*t
+Baloon#:B2(2) says:It is raining, we need to go lower" 
+JetPlane#J1(3):Flip upside down so the sun won't blind you.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5): I can't see sh*t
+Helicopter#H3(6):It is snowing, lets land.
+JetPlane#J2(8): Get cruising altitude.
+Helicopter#H4(9): I can't see sh*t
+Baloon#B2(2): There's something in the mist!!! 
+JetPlane#J1(3): Get cruising altitude.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5): I can't see sh*t
+Helicopter#H3(6): Don't look at the sun
+JetPLane#J2(8): Just fly above the clouds.
+Helicopter#H4(9): I can't see sh*t
+Baloon#B2(2) has landed.
+Baloon#:B2(2) says:It is raining, we need to go lower" 
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5): I can't see sh*t
+Helicopter#H3(6): I can't see sh*t
+JetPlane#J2(8):We don't care we just make sonic booms through this fog.
+Helicopter#H4(9): I can't see sh*t
+JetPlane#J1(3):We don't care we just make sonic booms through this fog.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5): I can't see sh*t
+Helicopter#H3(6): I can't see sh*t
+JetPLane#J2(8): Just fly above the clouds.
+Helicopter#H4(9): I can't see sh*t
+JetPlane#J1(3):Flip upside down so the sun won't blind you.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5): I can't see sh*t
+Helicopter#H3(6): I can't see sh*t
+JetPlane#J2(8):Flip upside down so the sun won't blind you.
+Helicopter#H4(9): I can't see sh*t
+JetPlane#J1(3):Flip upside down so the sun won't blind you.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5): I can't see sh*t
+Helicopter#H3(6): It is raining, lets head east.
+JetPlane#J2(8):We don't care we just make sonic booms through this fog.
+Helicopter#H4(9): I can't see sh*t
+JetPlane#J1(3):We don't care we just make sonic booms through this fog.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5): I can't see sh*t
+Helicopter#H3(6):It is snowing, lets land.
+JetPlane#J2(8): Get cruising altitude.
+Helicopter#H4(9): I can't see sh*t
+JetPlane#J1(3):Flip upside down so the sun won't blind you.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5): I can't see sh*t
+Helicopter#H3(6): It is raining, lets head east.
+JetPlane#J2(8):Flip upside down so the sun won't blind you.
+Helicopter#H4(9): I can't see sh*t
+JetPlane#J1(3):Flip upside down so the sun won't blind you.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5): I can't see sh*t
+Helicopter#H3(6): Don't look at the sun
+JetPlane#J2(8):We don't care we just make sonic booms through this fog.
+Helicopter#H4(9): I can't see sh*t
+JetPLane#J1(3): Just fly above the clouds.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5): I can't see sh*t
+Helicopter#H3(6): It is raining, lets head east.
+JetPlane#J2(8):Flip upside down so the sun won't blind you.
+Helicopter#H4(9): I can't see sh*t
+JetPlane#J1(3):Flip upside down so the sun won't blind you.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5): I can't see sh*t
+Helicopter#H3(6):It is snowing, lets land.
+JetPlane#J2(8):We don't care we just make sonic booms through this fog.
+Helicopter#H4(9): I can't see sh*t
+JetPlane#J1(3):Flip upside down so the sun won't blind you.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5): I can't see sh*t
+Helicopter#H3(6):It is snowing, lets land.
+JetPLane#J2(8): Just fly above the clouds.
+Helicopter#H4(9): I can't see sh*t
+JetPlane#J1(3): Get cruising altitude.
+Helicopter#H1(4): I can't see sh*t
+Helicopter#H2(5): I can't see sh*t
+Helicopter#H3(6):It is snowing, lets land.
+JetPlane#J2(8): Get cruising altitude.
+Helicopter#H4(9): I can't see sh*t

@@ -7,9 +7,9 @@ import java.io.IOException;
 
 public class Logger {
     private static Logger writefile = null;
-    private static BufferedWriter bw = null;
-    private static File file = null;
-    private static FileWriter fw = null;
+    private static BufferedWriter _bufferedWriter = null;
+    private static File _file = null;
+    private static FileWriter _fileWriter = null;
     private Logger() {
     }
 
@@ -17,19 +17,19 @@ public class Logger {
         if (writefile == null) {
             try{
                 writefile = new Logger();
-                file = new File("simulation.txt");
-                fw = new FileWriter(file);
-                bw = new BufferedWriter(fw);
+                _file = new File("simulation.txt");
+                _fileWriter = new FileWriter(_file);
+                _bufferedWriter = new BufferedWriter(_fileWriter);
             } catch (IOException ioe) {}
         }
         return writefile;
     }
 
-    public void	writetofile(String str) {
+    public void	fileWriter(String str) {
         try {
 
-            bw.write(str);
-            bw.newLine();
+            _bufferedWriter.write(str);
+            _bufferedWriter.newLine();
         } catch (IOException ioe) {
             ioe.printStackTrace();
         }
@@ -37,8 +37,8 @@ public class Logger {
 
     public void close() {
         try {
-            if ( bw != null)
-                bw.close();
+            if ( _bufferedWriter != null)
+                _bufferedWriter.close();
         } catch (Exception ex) {
             System.out.println("Error in closing the BufferedWriter"+ex);
         }

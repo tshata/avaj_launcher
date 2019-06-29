@@ -1,5 +1,6 @@
 package za.co.wethinkcode.aircraft;
 
+import za.co.wethinkcode.tools.Logger;
 import za.co.wethinkcode.weather.*;
 
 import java.io.FileWriter;
@@ -17,25 +18,21 @@ public class Helicopter extends Aircraft implements Flyable{
         if(weather.equals("RAIN")){
             this.coordinates = new Coordinates(this.coordinates.getLongitude() + 5,this.coordinates.getLatitude(), this.coordinates.getHeight());
             //write to file
-            System.out.print("Helicopter#:" + this.name + "(" + this.id + ")" + " says: ");
-            System.out.println("It is raining, lets head east.");
+           Logger.getWriteFile().fileWriter("Helicopter#" + this.name + "(" + this.id + "):" + " It is raining, lets head east.");
         }
         else if(weather.equals("SUN")){
             this.coordinates = new Coordinates(this.coordinates.getLongitude(),this.coordinates.getLatitude() + 10,this.coordinates.getHeight() + 2);
             //write to file
-            System.out.print("Helicopter#:" + this.name + "(" + this.id + ")" + " says: ");
-            System.out.println("Don't look at the sun");
+            Logger.getWriteFile().fileWriter("Helicopter#" + this.name + "(" + this.id + "):" + " Don't look at the sun");
         }
         else if(weather.equals("FOG")){
             this.coordinates = new Coordinates(this.coordinates.getLongitude() + 1,this.coordinates.getLatitude(),this.coordinates.getHeight() - 12);
             //write to file
-            System.out.print("Helicopter#:" + this.name + "(" + this.id + ")" + " says: ");
-            System.out.println("I can't see sh*t");
+            Logger.getWriteFile().fileWriter("Helicopter#" + this.name + "(" + this.id + "):" + " I can't see sh*t");
         }
         else if(weather.equals("SNOW")) {
             this.coordinates = new Coordinates(this.coordinates.getLongitude(), this.coordinates.getLatitude(), this.coordinates.getHeight() - 7);
-            System.out.print("Helicopter#:" + this.name + "(" + this.id + ")" + " says: ");
-            System.out.println("It is snowing, lets land.");
+            Logger.getWriteFile().fileWriter("Helicopter#" + this.name + "(" + this.id + "):" + " It is snowing, lets land.");
         }
         //write to file that signal lost
     }
@@ -48,10 +45,10 @@ public class Helicopter extends Aircraft implements Flyable{
             if(this.coordinates.getHeight() == 0)
             {
                 weatherTower.unregister(this);
-                System.out.println("Helicopter#" + this.name + "(" + this.id + ")" + " has landed.");
+                Logger.getWriteFile().fileWriter("Helicopter#" + this.name + "(" + this.id + ")" + " has landed.");
             }
 
-                System.out.println("Tower says: Helicopter#" + this.name + "(" + this.id + ")" + " registered to weather tower.");
+            Logger.getWriteFile().fileWriter("Tower says: Helicopter#" + this.name + "(" + this.id + ")" + " registered to weather tower.");
                 weatherTower.register(this);
         }catch(Exception e){
             System.out.println(e);

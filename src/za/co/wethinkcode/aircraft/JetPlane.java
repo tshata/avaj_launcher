@@ -1,5 +1,6 @@
 package za.co.wethinkcode.aircraft;
 
+import za.co.wethinkcode.tools.Logger;
 import za.co.wethinkcode.weather.WeatherTower;
 
 public class JetPlane extends Aircraft implements Flyable{
@@ -15,17 +16,21 @@ public class JetPlane extends Aircraft implements Flyable{
         if(weather.equals("RAIN")){
             this.coordinates = new Coordinates(this.coordinates.getLongitude(),this.coordinates.getLatitude() + 5, this.coordinates.getHeight());
             //write to file
+            Logger.getWriteFile().fileWriter("JetPLane#" + this.name + "(" + this.id + "):" + " Just fly above the clouds.");
         }
         else if(weather.equals("SUN")){
             this.coordinates = new Coordinates(this.coordinates.getLongitude(),this.coordinates.getLatitude() + 10,this.coordinates.getHeight() + 2);
             //write to file
+            Logger.getWriteFile().fileWriter("JetPlane#" + this.name + "(" + this.id + "):" + " Flip upside down so the sun won't blind you.");
         }
         else if(weather.equals("FOG")){
             this.coordinates = new Coordinates(this.coordinates.getLongitude(),this.coordinates.getLatitude() + 1,this.coordinates.getHeight());
             //write to file
+            Logger.getWriteFile().fileWriter("JetPlane#" + this.name + "(" + this.id + "):" + " We don't care we just make sonic booms through this fog.");
         }
         else if(weather.equals("SNOW")) {
             this.coordinates = new Coordinates(this.coordinates.getLongitude(), this.coordinates.getLatitude(), this.coordinates.getHeight() - 7);
+            Logger.getWriteFile().fileWriter("JetPlane#" + this.name + "(" + this.id + "):" + " Get cruising altitude.");
         }
         //write to file that signal lost
     }
@@ -38,9 +43,9 @@ public class JetPlane extends Aircraft implements Flyable{
             if(this.coordinates.getHeight() == 0)
             {
                 weatherTower.unregister(this);
-                System.out.println("Jetplane#" + this.name + "(" + this.id + ")" + " has landed.");
+                Logger.getWriteFile().fileWriter("Jetplane#" + this.name + "(" + this.id + ")" + " has landed.");
             }
-            System.out.println("Tower says: Jetplane#" + this.name + "(" + this.id + ")" + " registered to weather tower.");
+            Logger.getWriteFile().fileWriter("Tower says: Jetplane#" + this.name + "(" + this.id + ")" + " registered to weather tower.");
             //Simulator.logger.close();
         }catch(Exception e){
             System.out.println(e);
